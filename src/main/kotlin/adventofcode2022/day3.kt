@@ -2,11 +2,11 @@ package adventofcode2022
 
 fun main() {
     val data = ClassLoader.getSystemResource("adventofcode2022/day3.txt").readText().lines()
-    solution1(data)
-    solution2(data)
+    day3Solution1(data)
+    day3Solution2(data)
 }
 
-fun solution1(items: List<String>) {
+fun day3Solution1(items: List<String>) {
     var sum = 0
     for (item in items) {
         val firstHalf = item.substring(0, item.length / 2)
@@ -25,7 +25,7 @@ fun solution1(items: List<String>) {
     println(sum)
 }
 
-fun solution2(items: List<String>) {
+fun day3Solution2(items: List<String>) {
     var sum = 0
     for (i in items.indices step 3) {
         val group = items.subList(i, i + 3)

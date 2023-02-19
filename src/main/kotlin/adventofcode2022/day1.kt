@@ -3,11 +3,11 @@ package adventofcode2022
 fun main() {
     val data = ClassLoader.getSystemResource("adventofcode2022/day1.txt").readText().lines()
         .map { s -> if (!s.isEmpty()) s.toInt() else 0 }
-    solution1(data)
-    solution2(data)
+    day1Solution1(data)
+    day1Solution2(data)
 }
 
-fun solution1(calories: List<Int>) {
+fun day1Solution1(calories: List<Int>) {
     var maxCalories = 0
     var currentElf = 0
     var currentCalories = 0
@@ -31,7 +31,7 @@ fun solution1(calories: List<Int>) {
     println(maxCalories)
 }
 
-fun solution2(calories: List<Int>) {
+fun day1Solution2(calories: List<Int>) {
     val elfCalories = mutableMapOf<Int, Int>()
     var elfNumber = 0
 

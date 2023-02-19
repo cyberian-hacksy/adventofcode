@@ -7,16 +7,16 @@ fun main() {
             val parts = line.split(" ")
             parts[0] to parts[1]
         }.toList()
-    solution(data)
+    day2Solution(data)
     val choiceMap = mapOf(
         "A" to mapOf("X" to "Z", "Y" to "X", "Z" to "Y"),
         "B" to mapOf("X" to "X", "Y" to "Y", "Z" to "Z"),
         "C" to mapOf("X" to "Y", "Y" to "Z", "Z" to "X")
     )
-    solution(data.map { Pair(it.first, choiceMap.getValue(it.first).getValue(it.second)) })
+    day2Solution(data.map { Pair(it.first, choiceMap.getValue(it.first).getValue(it.second)) })
 }
 
-fun solution(strategy: List<Pair<String, String>>) {
+fun day2Solution(strategy: List<Pair<String, String>>) {
     val score = strategy.sumOf { (opponentChoice, yourChoice) ->
         val outcomes = mapOf(
             "A" to mapOf("X" to 3, "Y" to 6, "Z" to 0),
