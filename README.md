@@ -27,4 +27,7 @@
 
 * __2022, day 5__: Hours were spent trying to get correct crates stacks input parsing from ChatGPT without any luck. It
   was always trying to parse the lines of crates not columns. And even if explained explicitly that the crates are
-  stacked in columns the parsing was incorrect. Had to give up and write the parsing code manually.  
+  stacked in columns the parsing was incorrect. Had to give up and write the parsing code manually.
+* __2022, day 7__: It was very difficult to get the correctly working code out of ChatGPT. Also, interestingly, the new
+  Turbo model produced cleaner and more elegant code but the Legacy model version was closer to the correct one, so in
+  the end I've used it instead of trying to fix the Turbo one. Overall, Legacy model is slower but more accurate.
