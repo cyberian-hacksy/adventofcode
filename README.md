@@ -31,3 +31,7 @@
 * __2022, day 7__: It was very difficult to get the correctly working code out of ChatGPT. Also, interestingly, the new
   Turbo model produced cleaner and more elegant code but the Legacy model version was closer to the correct one, so in
   the end I've used it instead of trying to fix the Turbo one. Overall, Legacy model is slower but more accurate.
+* __2022, day 8__: Similarly to the previous day it was quite challenging to get something working. Required some
+  additional effort to fix the defects. Also, had to re-write the requirements for part 2 to make them more structured
+  and simple for ChatGPT to parse. Again, the Legacy model proved to be more accurate, but then Turbo model was used for
+  some refactoring work.
